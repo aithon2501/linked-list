@@ -66,6 +66,10 @@ h1 {
   padding: 10px;
 }
 
+.bookmark-1 .read{
+  background-color: #F2F4F4;
+}
+
 .logo {
   height: 70px;
   width: 70px;
@@ -77,6 +81,13 @@ h1 {
 .link-button {
   border:0;
   text-decoration: underline;
+  text-decoration-color: #F2F4F4;
+  color: #455A64;
+}
+
+.link-button:hover {
+  font-weight: 800;
+  text-decoration-color: #FFC107;
 }
 
 h2 {
@@ -86,13 +97,26 @@ h2 {
 
 .website-link {
   color: #CFD8DC;
+  text-decoration: underline;
+  text-decoration-color: #F2F4F4;
+
 }
 
 .website-link:hover {
   color: #455A64;
+  font-weight: 800;
+  text-decoration-color: #FFC107;
 }
 
+.website-link .read {
+  text-decoration-color: #CFD8DC;
+}
+
+#read-button .read {
+  color: #F05A28;
+}
+
+
 #delete-button {
-  position:relative;
-  right:0px;
+  float: right;
 }
