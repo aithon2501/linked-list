@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+section {
+  /*display: inline-block;*/
+}
+
+input {
+  display: block;
+  width: 100%;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+.submit-button {
+  width: 100%;
+}
+
+.input-block {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+}
+
+
+.section-1 {
+  display: inline-block;
+  width: 50%;
+  height: 100vh;
+  background-color: #455A64;
+  display: inline-block;
+}
+
+.section-2 {
+  float: right;
+  /*display: inline-block;*/
+  width: 50%;
+  height: 100vh;
+  background-color: #CFD8DC;
+}
+
+.bookmark-1 {
+  border: 1px solid #607D8B;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
