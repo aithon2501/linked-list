@@ -41,7 +41,6 @@ h1 {
   width: 80%;
 }
 
-
 .section-1 {
   display: inline-block;
   width: 50%;
@@ -63,6 +62,8 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  background-color: #FFFFFF;
+  padding: 10px;
 }
 
 .logo {
@@ -71,4 +72,27 @@ h1 {
   position: relative;
   top: 20px;
   margin-right:10px;
+}
+
+.link-button {
+  border:0;
+  text-decoration: underline;
+}
+
+h2 {
+  color: #455A64;
+  margin: 0;
+}
+
+.website-link {
+  color: #CFD8DC;
+}
+
+.website-link:hover {
+  color: #455A64;
+}
+
+#delete-button {
+  position:relative;
+  right:0px;
 }
