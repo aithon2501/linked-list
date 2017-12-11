@@ -93,6 +93,5 @@ h2 {
 }
 
 #delete-button {
-  position:relative;
-  right:0px;
+  float:right;
 }
