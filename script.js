@@ -7,19 +7,27 @@ var websiteNameOutput = document.querySelector('h2')
 var urlOutput = document.querySelector('.website-link');
 var readButton = document.querySelector('#read-button');
 var deleteButton = document.querySelector('#delete-button');
+var bookmark = document.querySelector('.bookmark-1');
 
 
-submitButton.addEventListener('click', function(e) {
-  e.preventDefault();
-  websiteNameOutput.innerText = "hello";
-  console.log('click');
+$('.submit-button').on('click', function () {
+  console.log('clicky');
+  var name = $('.website-name-input').val();
+  var url = $('.website-url').val();
+  $('.section-2').prepend('<article class="bookmark-1"><h2>'+name+'</h2><hr><p class="website-link">'+url+'</p><hr><button class="link-button" id="read-button">Read</button><button class="link-button" id="delete-button">Delete</button></article>')
 });
 
-function Bookmark(websiteNameInput, urlInput) {
-  this.siteName = websiteNameInput;
-  this.url = urlInput;
-};
+$('.section-2').on('click','#read-button', function () {
+  console.log("read click");
+  $(this).parent().toggleClass('read');
+});
 
-var newBookmark = new Bookmark('google', 'www.google.com');
+$('.section-2').on('click', '#delete-button', function () {
+  console.log("delete click");
+  $(this).parent().remove();
+});
+
+
+
 
 
