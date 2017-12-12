@@ -17,6 +17,9 @@ input {
   margin-bottom: 30px;
 }
 
+button {
+  outline: none;
+}
 
 h1 {
   text-align: center;
@@ -61,14 +64,15 @@ h1 {
   border: 1px solid #607D8B;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
   width: 80%;
   background-color: #FFFFFF;
   padding: 10px;
 }
 
-.bookmark-1 .read{
+/*.bookmark-1 .read{
   background-color: #F2F4F4;
-}
+}*/
 
 .logo {
   height: 70px;
@@ -95,6 +99,10 @@ h2 {
   margin: 0;
 }
 
+.read {
+  background-color: #F2F4F4;
+}
+
 .website-link {
   color: #CFD8DC;
   text-decoration: underline;
@@ -108,14 +116,18 @@ h2 {
   text-decoration-color: #FFC107;
 }
 
-.website-link .read {
+.read .website-link {
   text-decoration-color: #CFD8DC;
 }
 
-#read-button .read {
+.read #read-button {
   color: #F05A28;
+  background-color: #F2F4F4;
 }
 
+.read #delete-button {
+  background-color: #F2F4F4;
+}
 
 #delete-button {
   float: right;
