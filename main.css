@@ -173,13 +173,6 @@ h2 {
 
 
 #delete-button {
-<<<<<<< HEAD
-  float:right;
-=======
   float: right;
-<<<<<<< HEAD
->>>>>>> 0edd16e90f4844e381900f246051aaf7bc471d4d
-=======
   outline: none;
->>>>>>> ef0466b90f36182744f99f9c5890e53458af14d2
-}
+  }
