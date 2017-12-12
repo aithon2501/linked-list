@@ -5,9 +5,6 @@
 body {
   margin: 0;
 }
-section {
-  /*display: inline-block;*/
-}
 
 input {
   display: block;
@@ -18,11 +15,26 @@ input {
 }
 
 
+button {
+  outline: none;
+}
+
 h1 {
   text-align: center;
   font-size: 42px;
   color: #FFFFFF;
+}
 
+h2 {
+  color: #455A64;
+  margin: 0;
+}
+
+h5 {
+  color: #FFFFFF;
+  display: inline-block;
+  width: 48%;
+  text-align: center;
 }
 
 .submit-button {
@@ -31,8 +43,11 @@ h1 {
   background-color: #FFC107;
   border-radius: 0;
   font-size: 20px;
+  font-weight: 800;
   color: #FFFFFF;
   padding: 0;
+  outline: none;
+  border: 0;
 }
 
 .input-block {
@@ -42,33 +57,50 @@ h1 {
 }
 
 .section-1 {
+  position: fixed;
   display: inline-block;
   width: 50%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #455A64;
-  display: inline-block;
 }
 
 .section-2 {
   float: right;
-  /*display: inline-block;*/
+  position: relative;
   width: 50%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #CFD8DC;
+}
+
+.bookmark {
+  border: 1px solid #607D8B;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  background-color: #FFFFFF;
+  padding: 10px;
 }
 
 .bookmark-1 {
   border: 1px solid #607D8B;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
   width: 80%;
   background-color: #FFFFFF;
   padding: 10px;
 }
 
-.bookmark-1 .read{
+
+.read{
+
+/*.bookmark-1 .read{
   background-color: #F2F4F4;
-}
+}*/
 
 .logo {
   height: 70px;
@@ -83,6 +115,7 @@ h1 {
   text-decoration: underline;
   text-decoration-color: #F2F4F4;
   color: #455A64;
+  outline: none;
 }
 
 .link-button:hover {
@@ -90,16 +123,20 @@ h1 {
   text-decoration-color: #FFC107;
 }
 
+
 h2 {
   color: #455A64;
   margin: 0;
+}
+
+.read {
+  background-color: #F2F4F4;
 }
 
 .website-link {
   color: #CFD8DC;
   text-decoration: underline;
   text-decoration-color: #F2F4F4;
-
 }
 
 .website-link:hover {
@@ -108,12 +145,30 @@ h2 {
   text-decoration-color: #FFC107;
 }
 
-.website-link .read {
+.read .website-link {
   text-decoration-color: #CFD8DC;
 }
 
-#read-button .read {
+
+.read #read-button{
   color: #F05A28;
+  background-color: #F2F4F4;
+  font-weight: 800;
+
+.read #read-button {
+  color: #F05A28;
+  background-color: #F2F4F4;
+
+}
+
+.read #delete-button {
+  background-color: #F2F4F4;
+}
+
+
+.website-url,
+.website-name-input {
+  outline: none;
 }
 
 
@@ -122,5 +177,9 @@ h2 {
   float:right;
 =======
   float: right;
+<<<<<<< HEAD
 >>>>>>> 0edd16e90f4844e381900f246051aaf7bc471d4d
+=======
+  outline: none;
+>>>>>>> ef0466b90f36182744f99f9c5890e53458af14d2
 }
