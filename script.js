@@ -24,18 +24,29 @@ $('.section-2').on('click', '#delete-button', function () {
 
 $('.website-name-input').on('keyup', function () {
   console.log('key up working??????');
+  // $('.submit-button').prop('disabled', false);
+  // enableButton();
   $('.submit-button').prop('disabled', false);
-
 })
 
 
 function bookmarkCount () {
-  numberOfBookmarks = $('.section-2 .bookmark-1').length;
+  var numberOfBookmarks = $('.section-2 .bookmark-1').length;
   // $('.number-of-bookmarks').text(numberOfBookmarks);
   console.log(numberOfBookmarks);
+  $('.number-of-bookmarks').text('Total bookmarks: ' +  numberOfBookmarks);
 }
 
 function readCount () {
   var readBookmark = $('.section-2 .read').length;
   console.log("read # " + readBookmark);
+  $('.read-bookmarks').text('Read bookmarks: ' + readBookmark);
+}
+
+function enableButton() {
+  if ( ($('.website-name-input').val().length > 1) && ($('.website-url').val().length > 1)) {
+    $('.submit-button').prop('disabled', false);
+  } else {
+    $('.submit-button').prop('disabled', true);
+  }
 }
