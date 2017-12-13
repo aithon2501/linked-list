@@ -63,7 +63,3 @@ function clearInputFields() {
   enableButton();
 }
 
-
-
-
-
