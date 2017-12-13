@@ -14,7 +14,6 @@ input {
   margin-bottom: 30px;
 }
 
-
 button {
   outline: none;
 }
@@ -87,7 +86,6 @@ h5 {
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-
   width: 80%;
   background-color: #FFFFFF;
   padding: 10px;
@@ -151,13 +149,11 @@ h2 {
   background-color: #F2F4F4;
 }
 
-
 .website-url,
 .website-name-input {
   outline: none;
   box-sizing: border-box;
 }
-
 
 #delete-button {
   float: right;
