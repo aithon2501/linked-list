@@ -1,3 +1,5 @@
+bookmarkCount();
+readCount();
 
 $('.submit-button').on('click', function () {
   errorCheck();
@@ -22,7 +24,7 @@ $('.website-name-input, .website-url').on('keyup', function () {
 function newBookmark () {
   var name = $('.website-name-input').val();
   var url = $('.website-url').val();
-  var newArticle = '<article class="bookmark-1"><h2>'+name+'</h2><hr><p class="website-link">'+url+'</p><hr><button class="link-button" id="read-button">Read</button><button class="link-button" id="delete-button">Delete</button></article>'
+  var newArticle = '<article class="bookmark-1"><h2>'+name+'</h2><hr><a target="_blank" href="http://'+url+'" class="website-link">'+url+'</a><hr><button class="link-button" id="read-button">Read</button><button class="link-button" id="delete-button">Delete</button></article>'
   $('.section-2').prepend(newArticle);
 }
 
@@ -44,6 +46,7 @@ function enableButton() {
     $('.submit-button').prop('disabled', false);
   }
 }
+
 function errorCheck () {
   if (($('.website-name-input').val() === '') || $('.website-url').val() === ''){
     alert("Error!!!!");
