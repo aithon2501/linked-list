@@ -45,6 +45,14 @@ h5 {
   border: 0;
 }
 
+.submit-button:hover {
+  background-color: #FFD773;
+}
+
+.submit-button:disabled {
+   background-color: #E5AD06;
+}
+
 .input-block {
   margin-right: auto;
   margin-left: auto;
