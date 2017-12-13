@@ -50,9 +50,18 @@ h5 {
   border: 0;
 }
 
+.submit-button:hover {
+  background-color: #FFD773;
+}
+
+.submit-button:disabled {
+   background-color: #E5AD06;
+}
+
 .input-block {
   margin-right: auto;
   margin-left: auto;
+  margin-top: 30%;
   width: 80%;
 }
 
@@ -72,7 +81,7 @@ h5 {
   background-color: #CFD8DC;
 }
 
-.bookmark {
+/*.bookmark {
   border: 1px solid #607D8B;
   margin-left: auto;
   margin-right: auto;
@@ -81,7 +90,7 @@ h5 {
   width: 80%;
   background-color: #FFFFFF;
   padding: 10px;
-}
+}*/
 
 .bookmark-1 {
   border: 1px solid #607D8B;
@@ -93,14 +102,8 @@ h5 {
   width: 80%;
   background-color: #FFFFFF;
   padding: 10px;
+  box-sizing: border-box;
 }
-
-
-.read{
-
-/*.bookmark-1 .read{
-  background-color: #F2F4F4;
-}*/
 
 .logo {
   height: 70px;
@@ -122,7 +125,6 @@ h5 {
   font-weight: 800;
   text-decoration-color: #FFC107;
 }
-
 
 h2 {
   color: #455A64;
@@ -154,11 +156,6 @@ h2 {
   color: #F05A28;
   background-color: #F2F4F4;
   font-weight: 800;
-
-.read #read-button {
-  color: #F05A28;
-  background-color: #F2F4F4;
-
 }
 
 .read #delete-button {
@@ -169,10 +166,61 @@ h2 {
 .website-url,
 .website-name-input {
   outline: none;
+  box-sizing: border-box;
 }
 
 
 #delete-button {
   float: right;
   outline: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .section-1 {
+    min-height: 350px;
+    width: 100%;
+    top: 0;
+    z-index: 1;
   }
+
+  .section-2 {
+    margin-top: 10px;
+    position: absolute;
+    float: none;
+    top: 340px;
+    width: 100%;
+  }
+
+  .input-block {
+    margin-top: -30px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    top: 15px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
