@@ -90,6 +90,7 @@ h5 {
   background-color: #FFFFFF;
   padding: 10px;
   box-sizing: border-box;
+  height: 130px;
 }
 
 .logo {
@@ -106,6 +107,7 @@ h5 {
   text-decoration-color: #F2F4F4;
   color: #455A64;
   outline: none;
+  float: left;
 }
 
 .link-button:hover {
